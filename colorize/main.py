@@ -1,3 +1,4 @@
+PROJECT="colorize"
 import sys
 sys.path.insert(0,"./")
 import torch
@@ -13,6 +14,8 @@ from PIL import Image
 import dataset
 import engine
 import config
+import pandas as pd
+
 torch.cuda.empty_cache()
 
 if __name__=="__main__":
@@ -53,16 +56,20 @@ if __name__=="__main__":
     criterion=nn.BCEWithLogitsLoss().to(config.DEVICE)
     l1loss=nn.L1Loss().to(config.DEVICE)
 
-    E=engine.Engine("colorize",G,D,criterion,l1loss,oD,oG,config.DEVICE)
+    E=engine.Engine(PROJECT,G,D,criterion,l1loss,oD,oG,config.DEVICE)
     losses=[]
     for epoch in range(config.EPOCHS):
         train_loss=E.train(train_loader,epoch)
-        print(train_loss)
-        test_loss=E.generate(test_loader,epoch)
-        print(test_loss)
-        losses.append(*train_loss,*test_loss)
-        print(losses)
-        break
+        print(epoch,train_loss)
+        E.generate(test_loader,epoch)
+        
+        losses.append(train_loss)
+        
+        # break
 
+    logdf=pd.DataFrame(losses).reset_index()
+
+    logdf.columns=["epochs","GLoss","Dloss"]
+    logdf.to_csv(os.path.join(PROJECT,config.LOGPATH,"log_df.csv"))
 
 
