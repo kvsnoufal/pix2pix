@@ -23,14 +23,35 @@ Train Pix2Pix GAN models for:
  
  ![Gif of train videos](https://github.com/kvsnoufal/pix2pix/blob/master/docs/malcolm_train_gif.gif)
  
- Results:
+ ##### Results:
 
 ![Gif of results](https://github.com/kvsnoufal/pix2pix/blob/master/docs/malcolm_result_gif.gif)
 
 
-Click image below to open video in youtube
-[![malcolm x video](https://img.youtube.com/vi/Fhb1uHk80XQ/0.jpg)](https://youtu.be/Fhb1uHk80XQ)
+Checkout youtube for video with audio - recommended:
 [Youtube Link](https://youtu.be/Fhb1uHk80XQ)
+
+#### 2.Inpainting images to fix scratches, missing pixels etc.
+
+For training, I used VOC2012 dataset, and generated a “distorted version” of each image by randomly cropping pixels and adding black lines and blobs. Tested it on a held out portion of the dataset.
+
+![Pic of results](https://github.com/kvsnoufal/pix2pix/blob/master/docs/inpainting_results.jpeg)
+
+
+#### 3.Generating faces from doodles
+
+For training, I generated a “doodle” for each face in the 10k faces dataset using a combination of face-landmark detection feature in opencv and Holy Nested Edge detection.
+
+For testing, I set up webcam to read hand-drawn doodles on post-it notes.
+
+##### Results:
+
+![Gif of doodle results](https://github.com/kvsnoufal/pix2pix/blob/master/docs/doodleface_gif.gif)
+
+
+Check out youtube video :
+[Youtube Link](https://youtu.be/92gwRyJS8m8)
+
 
 
 
