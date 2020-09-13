@@ -22,6 +22,9 @@ Train Pix2Pix GAN models for:
  I download 2 videos ([Pursuit of Happiness last scenes](https://www.youtube.com/watch?v=x8-7mHT9edg&ab_channel=CiprianVatamanu), [Funniest moments in talkshow](https://www.youtube.com/watch?v=hO5Fp9ZLFqE&ab_channel=ComedySpace)), split the video into frames, and generate a grainy b/w image using some basic PIL functions. So I now have my image pairs for my training data:
  
  ![Gif of train videos](https://github.com/kvsnoufal/pix2pix/docs/malcolm_train_gif.gif)
+ 
+ 
+ <img src="https://github.com/kvsnoufal/pix2pix/docs/malcolm_train_gif.gif" width="40" height="40" />
 
 
 
