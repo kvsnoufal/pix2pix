@@ -23,6 +23,8 @@ Train Pix2Pix GAN models for:
  
  ![Gif of train videos](https://github.com/kvsnoufal/pix2pix/blob/master/docs/malcolm_train_gif.gif)
  
+Results:
 
+![Gif of results](https://github.com/kvsnoufal/pix2pix/blob/master/docs/malcolm_result_gif.gif)
 
-
+[![malcolm x video](https://img.youtube.com/vi/Fhb1uHk80XQ/0.jpg)](https://youtu.be/Fhb1uHk80XQ)
