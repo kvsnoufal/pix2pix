@@ -106,7 +106,6 @@ class InfillDatasetCutout():
 class ABDataset():
     def __init__(self,filepaths1,filepaths2,test=False):
         self.img_files=filepaths1
-        # self.lbl_files=filepaths2
         self.lbl_files=[os.path.join(filepaths2,os.path.basename(t)) for t in filepaths1]
         self.aug3c=albumentations.Compose(
             [
