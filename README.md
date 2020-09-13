@@ -23,8 +23,6 @@ Train Pix2Pix GAN models for:
  
  ![Gif of train videos](https://github.com/kvsnoufal/pix2pix/blob/master/docs/malcolm_train_gif.gif)
  
- 
- <img src="https://github.com/kvsnoufal/pix2pix/blob/master/docs/malcolm_train_gif.gif" width="40" height="40" />
 
 
 
