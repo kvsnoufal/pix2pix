@@ -27,7 +27,12 @@ Train Pix2Pix GAN models for:
 
 ![Gif of results](https://github.com/kvsnoufal/pix2pix/blob/master/docs/malcolm_result_gif.gif)
 
+
+Click image below to open video in youtube
 [![malcolm x video](https://img.youtube.com/vi/Fhb1uHk80XQ/0.jpg)](https://youtu.be/Fhb1uHk80XQ)
+[Youtube Link](https://youtu.be/Fhb1uHk80XQ)
+
+
 
 
 
