@@ -5,6 +5,7 @@ import torchvision
 import torch
 import torch.nn as nn
 from PIL import Image
+import os
 def random_mask(height, width, channels = 3):
     img = np.zeros((height, width, channels), np.uint8)
     

@@ -28,7 +28,6 @@ def CDk(in_,out_,kernel_size,stride,padding,bias,bn=True,rl=True,dp=True):
     conv=nn.Sequential(
         *order
     )
-
     return conv
 
 class DiscriminatorOneChannelInput(nn.Module):

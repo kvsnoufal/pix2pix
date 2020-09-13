@@ -4,8 +4,11 @@ import config
 from tqdm import tqdm
 import numpy as np
 import torchvision
+import os
+import img_utils
+
 class Engine:
-    def __init(self,project,G,D,criterion,l1loss,oD,oG,device):
+    def __init__(self,project,G,D,criterion,l1loss,oD,oG,device):
         self.project=project
         self.G=G
         self.D=D
@@ -57,7 +60,7 @@ class Engine:
     
     def validate(self,dataloader):
 
-        return pass
+        pass
     def generate(self,dataloader,epoch,savemodel=True):
         with torch.no_grad():
             

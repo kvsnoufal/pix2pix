@@ -1,0 +1,6 @@
+_pycache_
+.vscode
+/*/data/train
+/*/data/test
+/*/log
+*.pyc
