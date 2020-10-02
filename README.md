@@ -3,9 +3,6 @@ Paper To Code implementation of pix2pix GAN in native pytorch
 
 Original Paper- [ArxViv](https://arxiv.org/abs/1611.07004)
 
-```
-Code packaging in progress... Will be updated soon.......
-```
 
 Pls checkout the [medium article](https://medium.com/@noufalsamsudin/image-to-image-translations-for-colorizing-videos-image-restoration-and-face-generation-14b7d7a40b34?sk=a73efb61df685f717459ab89e8f2a0ba) for a quick overview.
 
